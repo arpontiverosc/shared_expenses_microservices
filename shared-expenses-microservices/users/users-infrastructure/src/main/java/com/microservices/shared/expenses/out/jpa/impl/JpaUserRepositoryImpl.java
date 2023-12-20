@@ -1,12 +1,13 @@
 package com.microservices.shared.expenses.out.jpa.impl;
 
-import com.clean.architecture.sharedexpenses.user_groups.domain.model.User;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.out.FindUserByIdRepository;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.out.SaveUserRepository;
-import com.clean.architecture.sharedexpenses.user_groups.infrastructure.out.jpa.SpringDataUserRepository;
-import com.clean.architecture.sharedexpenses.user_groups.infrastructure.out.jpa.mapper.UserMapper;
-import com.clean.architecture.sharedexpenses.user_groups.infrastructure.out.jpa.merger.UserJpaEntityMerger;
-import com.clean.architecture.sharedexpenses.user_groups.infrastructure.out.jpa.model.UserJpaEntity;
+
+import com.microservices.shared.expenses.model.User;
+import com.microservices.shared.expenses.out.jpa.SpringDataUserRepository;
+import com.microservices.shared.expenses.out.jpa.mapper.UserMapper;
+import com.microservices.shared.expenses.out.jpa.merger.UserJpaEntityMerger;
+import com.microservices.shared.expenses.out.jpa.model.UserJpaEntity;
+import com.microservices.shared.expenses.port.out.FindUserByIdRepository;
+import com.microservices.shared.expenses.port.out.SaveUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

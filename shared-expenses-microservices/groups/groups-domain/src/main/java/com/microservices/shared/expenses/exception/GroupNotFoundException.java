@@ -5,7 +5,7 @@ import com.microservices.shared.expenses.util.GroupErrorCode;
 
 public class GroupNotFoundException extends NotFoundException {
 
-    public GroupNotFoundException() {
-        super(GroupErrorCode.NOT_FOUND);
-    }
+  public GroupNotFoundException() {
+    super(GroupErrorCode.NOT_FOUND);
+  }
 }

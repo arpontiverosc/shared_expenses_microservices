@@ -9,13 +9,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserDetailResponseMapper {
     public static UserDetailResponse from(User user) {
-        UserDetailResponse userDetailResponse = new UserDetailResponse();
-        //builder
-        .setId(user.getId());
-        .setUserName(user.getUserName());
-        .setFirstName(user.getFirstName());
-        .setLastName(user.getLastName());
-        .setEmail(user.getEmail());
-        return userDetailResponse;
+        return UserDetailResponse.builder()
+                        .id(user.getId())
+                        .userName(user.getUserName())
+                        .firstName(user.getFirstName())
+                        .lastName(user.getLastName())
+                        .email(user.getEmail())
+                        .build();
     }
 }

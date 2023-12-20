@@ -11,5 +11,12 @@
 
     <artifactId>groups-domain</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.shared.expenses</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>

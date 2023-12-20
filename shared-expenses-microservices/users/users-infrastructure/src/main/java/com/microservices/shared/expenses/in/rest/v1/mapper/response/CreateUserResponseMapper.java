@@ -12,10 +12,7 @@ public class CreateUserResponseMapper {
         if (user == null) {
             return null;
         }
-        CreateUserResponse createCustomerResponse = new CreateUserResponse();
-        .setId(user.getId());
-        //build
-        return createCustomerResponse;
+        return CreateUserResponse.builder().id(user.getId()).build();
     }
 
 }

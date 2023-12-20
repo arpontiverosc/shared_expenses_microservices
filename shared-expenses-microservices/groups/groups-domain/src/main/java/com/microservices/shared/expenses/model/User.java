@@ -1,11 +1,10 @@
-package com.microservices.shared.expenses.port.in.model;
+package com.microservices.shared.expenses.model;
 
 
-public class DetailUserQuery {
-
+public class User {
     private final String id;
 
-    public DetailUserQuery(Builder builder) {
+    public User(Builder builder) {
         this.id = builder.id;
     }
 
@@ -28,8 +27,8 @@ public class DetailUserQuery {
             return this;
         }
 
-        public DetailUserQuery build() {
-            return new DetailUserQuery(this);
+        public User build() {
+            return new User(this);
         }
     }
 }

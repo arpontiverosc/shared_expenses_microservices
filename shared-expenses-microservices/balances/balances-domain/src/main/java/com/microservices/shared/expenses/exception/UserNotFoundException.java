@@ -1,9 +1,7 @@
 package com.microservices.shared.expenses.exception;
 
 
-import com.clean.architecture.sharedexpenses.balances.domain.util.UserErrorCode;
-import com.clean.architecture.sharedexpenses.common.exception.NotFoundException;
-
+import com.microservices.shared.expenses.util.UserErrorCode;
 
 public class UserNotFoundException extends NotFoundException {
 

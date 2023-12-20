@@ -9,13 +9,11 @@ public class CreateUserCommandMapper {
         if (request == null) {
             return null;
         }
-        CreateUserCommand command = new CreateUserCommand();
-        command.setUserName(request.getUserName());
-        command.setFirstName(request.getFirstName());
-        command.setLastName(request.getLastName());
-        command.setEmail(request.getEmail());
-
-        return command;
-
+        return CreateUserCommand.Builder.builder()
+                                .userName(request.getUserName())
+                                .firstName(request.getFirstName())
+                                .lastName(request.getLastName())
+                                .email(request.getEmail())
+                                .build();
     }
 }

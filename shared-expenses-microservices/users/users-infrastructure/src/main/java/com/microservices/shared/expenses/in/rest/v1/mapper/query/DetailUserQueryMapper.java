@@ -5,8 +5,6 @@ import com.microservices.shared.expenses.port.in.model.DetailUserQuery;
 
 public class DetailUserQueryMapper {
     public static DetailUserQuery from(String userId) {
-        DetailUserQuery detailUserQuery = new DetailUserQuery();
-        detailUserQuery.setId(userId);
-        return detailUserQuery;
+        return DetailUserQuery.Builder.builder().id(userId).build();
     }
 }

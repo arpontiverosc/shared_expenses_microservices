@@ -12,6 +12,8 @@
 
     <artifactId>groups</artifactId>
     <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>groups-container</module>
         <module>groups-domain</module>
@@ -19,5 +21,33 @@
         <module>groups-use-case</module>
     </modules>
 
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>groups-container</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>groups-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>groups-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>groups-use-case</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
