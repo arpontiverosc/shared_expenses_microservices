@@ -7,6 +7,7 @@
 - Kaftka
 - Saga?
 - Integration tests with docker
+- Circuit breaker
 
 
 
