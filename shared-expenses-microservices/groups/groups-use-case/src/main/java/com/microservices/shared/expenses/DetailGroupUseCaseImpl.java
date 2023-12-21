@@ -1,9 +1,10 @@
 package com.microservices.shared.expenses;
 
-import com.clean.architecture.sharedexpenses.user_groups.domain.model.Group;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.in.DetailGroupUseCase;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.in.model.DetailGroupQuery;
-import com.clean.architecture.sharedexpenses.user_groups.domain.service.GroupService;
+
+import com.microservices.shared.expenses.model.Group;
+import com.microservices.shared.expenses.port.in.DetailGroupUseCase;
+import com.microservices.shared.expenses.port.in.model.DetailGroupQuery;
+import com.microservices.shared.expenses.service.GroupService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

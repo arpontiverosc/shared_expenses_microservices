@@ -1,5 +1,10 @@
 package com.microservices.shared.expenses;
 
+import com.microservices.shared.expenses.model.User;
+import com.microservices.shared.expenses.port.in.CreateUserUseCase;
+import com.microservices.shared.expenses.port.in.model.CreateUserCommand;
+import com.microservices.shared.expenses.port.out.SaveUserRepository;
+import com.microservices.shared.expenses.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

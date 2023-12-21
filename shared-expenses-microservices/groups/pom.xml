@@ -21,6 +21,13 @@
         <module>groups-use-case</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.shared.expenses</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>

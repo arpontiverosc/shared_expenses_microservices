@@ -10,11 +10,5 @@
     </parent>
 
     <artifactId>users-domain</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.microservices.shared.expenses</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

@@ -20,34 +20,41 @@
         <module>users-use-case</module>
     </modules>
 
-    <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>com.microservices.shared.expenses</groupId>
-            <artifactId>users-container</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microservices.shared.expenses</groupId>
-            <artifactId>users-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microservices.shared.expenses</groupId>
-            <artifactId>users-infrastructure</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microservices.shared.expenses</groupId>
-            <artifactId>users-use-case</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microservices.shared.expenses</groupId>
             <artifactId>common</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>users-container</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>users-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>users-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>users-use-case</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.shared.expenses</groupId>
+                <artifactId>common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
 

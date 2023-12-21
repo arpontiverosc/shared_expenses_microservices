@@ -1,8 +1,8 @@
 package com.microservices.shared.expenses.in.rest.v1.model.request;
 
 
-import com.clean.architecture.sharedexpenses.balances.domain.util.BalanceErrorCode;
-import com.clean.architecture.sharedexpenses.balances.domain.util.BalanceFieldValidation;
+import com.microservices.shared.expenses.util.BalanceErrorCode;
+import com.microservices.shared.expenses.util.BalanceFieldValidation;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;

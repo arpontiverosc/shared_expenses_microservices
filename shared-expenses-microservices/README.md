@@ -5,9 +5,11 @@
 - Circuit breaker
 - CQRS
 - Kaftka
-- Saga?
+- Saga
 - Integration tests with docker
 - Circuit breaker
+- Aop
+- -Flyway
 
 
 

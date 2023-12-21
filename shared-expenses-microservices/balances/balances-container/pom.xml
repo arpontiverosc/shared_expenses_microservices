@@ -11,5 +11,42 @@
 
     <artifactId>balances-container</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.shared.expenses</groupId>
+            <artifactId>balances-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.microservices.shared.expenses</groupId>
+            <artifactId>balances-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.microservices.shared.expenses</groupId>
+            <artifactId>balances-use-case</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

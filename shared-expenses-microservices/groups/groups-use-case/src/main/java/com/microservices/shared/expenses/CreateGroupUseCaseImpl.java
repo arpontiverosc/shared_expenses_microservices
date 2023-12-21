@@ -1,10 +1,11 @@
 package com.microservices.shared.expenses;
 
-import com.clean.architecture.sharedexpenses.user_groups.domain.model.Group;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.in.CreateGroupUseCase;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.in.model.CreateGroupCommand;
-import com.clean.architecture.sharedexpenses.user_groups.domain.port.out.SaveGroupRepository;
-import com.clean.architecture.sharedexpenses.user_groups.domain.service.GroupService;
+
+import com.microservices.shared.expenses.model.Group;
+import com.microservices.shared.expenses.port.in.CreateGroupUseCase;
+import com.microservices.shared.expenses.port.in.model.CreateGroupCommand;
+import com.microservices.shared.expenses.port.out.SaveGroupRepository;
+import com.microservices.shared.expenses.service.GroupService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
