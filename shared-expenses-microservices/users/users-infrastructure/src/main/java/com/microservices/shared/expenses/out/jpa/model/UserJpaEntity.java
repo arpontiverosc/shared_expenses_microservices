@@ -1,5 +1,6 @@
 package com.microservices.shared.expenses.out.jpa.model;
 
+
 import jakarta.persistence.*;
 import lombok.*;
 
